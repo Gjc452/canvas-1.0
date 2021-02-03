@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no, viewport-fit=cover">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<canvas id="drawing" width="200" height="200"></canvas>
+<div id="icon">
+    <svg id="brush" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-pan_icon1"></use>
+    </svg>
+    <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xiangpica1"></use>
+    </svg>
+    <svg id="thick" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-cuxi3"></use>
+    </svg>
+    <svg id="save" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xiazai"></use>
+    </svg>
+    <svg id="clear" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-lajitong"></use>
+    </svg>
+</div>
+<div id="color">
+    <ul id="wrap">
+        <li id="black" class="active"></li>
+        <li id="red"></li>
+        <li id="orange"></li>
+        <li id="yellow"></li>
+        <li id="green"></li>
+        <li id="blue"></li>
+        <li id="indigo"></li>
+        <li id="violet"></li>
+    </ul>
+</div>
+
+<ul id="lines">
+    <li id="small"><div></div></li>
+    <li id="normal"><div></div></li>
+    <li id="large"><div></div></li>
+    <li id="xLarge"><div></div></li>
+</ul>
+
+<script src="//at.alicdn.com/t/font_2362817_g2980f3hsl.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
