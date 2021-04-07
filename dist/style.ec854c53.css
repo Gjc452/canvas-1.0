@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ul,ol{
+    list-style: none;
+}
+body {
+    position: relative;
+}
+#drawing{
+    display: block;
+}
+#icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+#icon > svg {
+    fill: black;
+    padding: 12px 5px 0 5px;
+    width: 50px;
+    height: 43px;
+    transition: all 0.3s linear;
+}
+
+#icon > svg.active {
+    fill: red;
+}
+
+#color {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+#color > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#color > ul > li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+#color > ul > li.active {
+    box-shadow: 0 0 0 2px currentcolor ;
+}
+
+#black {
+    background: black;
+}
+
+#red {
+    background: red;
+    color: red;
+}
+
+#yellow {
+    background: yellow;
+    color: yellow;
+}
+
+#orange {
+    background: orange;
+    color: orange;
+}
+
+#green {
+    background: green;
+    color:green
+}
+
+#indigo {
+    background: indigo;
+    color:indigo
+}
+
+#violet {
+    background: violet;
+    color:violet;
+}
+
+#blue {
+    background: blue;
+    color:blue;
+}
+
+#lines{
+    visibility: hidden;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top:50px;
+    left: 103px;
+    padding:  0 5px;
+}
+#lines.active{
+    visibility: visible;
+}
+#lines:before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-10px);
+    border:10px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.1);
+}
+#lines > li{
+    width: 70px;
+    padding: 8px 0;
+}
+#lines >li:hover{
+    background:rgba(0,0,0,0.2);
+}
+#lines >li>div{
+    background: black;
+}
+#lines > li:nth-child(1)>div{
+    height: 2px;
+}
+#lines > li:nth-child(2)>div{
+    height: 4px;
+}
+#lines > li:nth-child(3)>div{
+    height: 6px;
+}
+#lines > li:nth-child(4)>div{
+    height: 8px;
+}
+
+
+/*# sourceMappingURL=style.ec854c53.css.map */
